@@ -11,11 +11,11 @@ namespace Electricity_Prj.Services
 {
     public class ElectricityBoard
     {
-        private readonly DBHandler _db;
+        private readonly DBHandler db;
 
         public ElectricityBoard()
         {
-            _db = new DBHandler();
+            db = new DBHandler();
         }
 
         private void ValidateConsumerNumber(string consumerNumber)
@@ -27,6 +27,8 @@ namespace Electricity_Prj.Services
             }
         }
 
+
+
         public void CalculateBill(ElectricityBill ebill)
         {
             ValidateConsumerNumber(ebill.ConsumerNumber);
@@ -34,51 +36,39 @@ namespace Electricity_Prj.Services
             int units = ebill.UnitsConsumed;
             double amount = 0;
 
-            int remaining = units;
-
-            if (remaining <= 100)
+            if (units <= 100)
             {
-                amount += 0; 
+                amount = 0;
+            }
+            else if (units > 100 && units <= 300)
+            {
+                amount = (units - 100) * 1.5;
+            }
+            else if (units > 300 && units <= 600)
+            {
+                amount = (200 * 1.5) + ((units - 300) * 3.5);
+            }
+            else if (units > 600 && units <= 1000)
+            {
+                amount = (200 * 1.5) + (300 * 3.5) + ((units - 600) * 5.5);
             }
             else
             {
-                remaining -= 100;
-
-                int slab2 = Math.Min(remaining, 200);
-                amount += slab2 * 1.5;
-                remaining -= slab2;
-
-                if (remaining > 0)
-                {
-                    int slab3 = Math.Min(remaining, 300);
-                    amount += slab3 * 3.5;
-                    remaining -= slab3;
-                }
-
-                if (remaining > 0)
-                {
-                    int slab4 = Math.Min(remaining, 400);
-                    amount += slab4 * 5.5;
-                    remaining -= slab4;
-                }
-
-                if (remaining > 0)
-                {
-                    amount += remaining * 7.5;
-                }
+                amount = (200 * 1.5) + (300 * 3.5) + (400 * 5.5) + ((units - 1000) * 7.5);
             }
 
             ebill.BillAmount = amount;
         }
 
+
         public void AddBill(ElectricityBill ebill)
         {
-            using (SqlConnection con = _db.GetConnection())
+            using (SqlConnection con = db.GetConnection())
             using (SqlCommand cmd = con.CreateCommand())
             {
                 cmd.CommandText = @"
-INSERT INTO dbo.ElectricityBill (consumer_number, consumer_name, units_consumed, bill_amount)
-VALUES (@consumer_number, @consumer_name, @units_consumed, @bill_amount);";
+                INSERT INTO ElectricityBill (consumer_number, consumer_name, units_consumed, bill_amount)
+                VALUES (@consumer_number, @consumer_name, @units_consumed, @bill_amount);";
                 cmd.Parameters.AddWithValue("@consumer_number", ebill.ConsumerNumber);
                 cmd.Parameters.AddWithValue("@consumer_name", ebill.ConsumerName);
                 cmd.Parameters.AddWithValue("@units_consumed", ebill.UnitsConsumed);
@@ -93,14 +83,14 @@ VALUES (@consumer_number, @consumer_name, @units_consumed, @bill_amount);";
         {
             var list = new List<ElectricityBill>();
 
-            using (SqlConnection con = _db.GetConnection())
+            using (SqlConnection con = db.GetConnection())
             using (SqlCommand cmd = con.CreateCommand())
             {
                 // Retrieve LAST N records by descending primary key 'id' (or fallback order)
                 cmd.CommandText = @"
-SELECT TOP (@n) consumer_number, consumer_name, units_consumed, bill_amount
-FROM dbo.ElectricityBill
-ORDER BY id DESC;";
+                SELECT TOP (@n) consumer_number, consumer_name, units_consumed, bill_amount
+                FROM ElectricityBill
+                ORDER BY id DESC;";
 
                 cmd.Parameters.Add("@n", SqlDbType.Int).Value = num;
 

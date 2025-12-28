@@ -20,11 +20,11 @@ namespace Electricity_Prj
             if (txtUser.Text == "admin" && txtPass.Text == "admin@123")
             {
                 Session["Admin"] = "true";
-                Response.Redirect("~/AddBill.aspx");
+                Response.Redirect("AddBill.aspx");
             }
             else
             {
-                lblMsg.Text = "Invalid credentials";
+                lblMsg.Text = "Invalid credentials , user should be admin and passs should be admin@123";
             }
 
         }
