@@ -16,7 +16,7 @@
         .login-wrap {
             max-width: 420px;
             margin: 50px auto;
-            background: #ffffff;
+            background: silver;
             border: 1px solid #e6e9ef;
             border-radius: 12px;
             box-shadow: 0 12px 28px rgba(0,0,0,0.08);
@@ -58,7 +58,7 @@
 
             .c:focus {
                 outline: none;
-                border-color: #6366f1;
+                border-color:#d225d2 ;
                 box-shadow: 0 0 0 3px rgba(99,102,241,0.18);
             }
 
@@ -73,9 +73,9 @@
             margin: 0 auto;
             display: block;
             padding: 10px 14px;
-            border: 1px solid transparent;
+            border: 1px solid purple;
             border-radius: 8px;
-            background: #2563eb;
+            background: purple;
             color: #fff;
             font-weight: 700;
             letter-spacing: 0.2px;
@@ -84,7 +84,7 @@
         }
 
             .b:hover {
-                background: #1d4ed8;
+                background:#d225d2 ;
             }
 
             .b:active {
@@ -92,14 +92,14 @@
             }
 
             .b:disabled {
-                background: #9ca3af;
+                background: purple;
                 cursor: not-allowed;
                 opacity: 0.75;
             }
 
         .foot-note {
             text-align: center;
-            color: #64748b;
+            color: black;
             font-size: 12px;
             margin-top: 10px;
         }
@@ -123,7 +123,7 @@
             <span class="gap"></span>
 
             <!-- login button -->
-            <asp:Button runat="server" ID="btnLogin" Text="Login" CssClass="b" OnClick="btnLogin_Click" />
+            <asp:Button runat="server" ID="btnLogin" Text="Login" CssClass="b" OnClick="btnLogin_Click" BorderColor="#660066" />
 
             <div class="foot-note">Use your admin credentials to sign in</div>
         </div>

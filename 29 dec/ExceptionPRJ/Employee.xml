@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Employee>
+<Employee>
+	<ID>100</ID>
+	<Name>Aashritha</Name>
+	<City>Chennai</City>
+</Employee>
+
+<Employee>
+	<ID>200</ID>
+	<Name>shobha</Name>
+	<City>bang</City>
+</Employee>
+
+<Employee>
+	<ID>300</ID>
+	<Name>Komal</Name>
+	<City>Hyd</City>
+</Employee>
+<Employee>
+	<ID>400</ID>
+	<Name>Aashok</Name>
+	<City>Vizag</City>
+</Employee>
+</Employee>

@@ -58,19 +58,19 @@
             font-weight: bold;
         }
         .btn-primary {
-            background: #007bff;
+            background: purple;
             color: #fff;
         }
         .btn-primary:hover {
-            background: #0056b3;
+            background: #d225d2;
         }
         .btn-outline {
-            background: #fff;
-            border: 1px solid #ccc;
-            color: #333;
+            background: purple;
+            color: #fff;
+           
         }
         .btn-outline:hover {
-            background: #f1f1f1;
+            background: #d225d2;
         }
         .msg-error { color: red; }
         .msg-success { color: green; }

@@ -17,14 +17,14 @@ namespace Electricity_Prj
         protected void btnLogin_Click(object sender, EventArgs e)
         {
 
-            if (txtUser.Text == "admin" && txtPass.Text == "admin@123")
+            if (txtUser.Text == "admin" && txtPass.Text == "admin@345")
             {
                 Session["Admin"] = "true";
                 Response.Redirect("AddBill.aspx");
             }
             else
             {
-                lblMsg.Text = "Invalid credentials , user should be admin and passs should be admin@123";
+                lblMsg.Text = "Invalid credentials , user should be admin and passs should be admin@345";
             }
 
         }

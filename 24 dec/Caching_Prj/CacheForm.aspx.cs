@@ -15,7 +15,14 @@ namespace Caching_Prj
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                GetProductsbyname("All");
+                Response.Cache.SetExpires(DateTime.Now.AddSeconds(30)); //by programming , duration 30 second in server page
+                Response.Cache.VaryByParams["None"] = true; //varybyparam
+                Response.Cache.SetCacheability(HttpCacheability.ServerAndPrivate); //location
+            }
+            lblmsg.Text = "This Page is cached at : " + DateTime.Now.ToString();
         }
         private void GetProductsbyname(string prductname)
         {

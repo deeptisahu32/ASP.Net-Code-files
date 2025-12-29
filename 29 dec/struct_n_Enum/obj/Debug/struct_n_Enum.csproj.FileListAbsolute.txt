@@ -1,0 +1,8 @@
+C:\Users\deeptisa\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\asp.net\struct_n_Enum\bin\Debug\struct_n_Enum.exe.config
+C:\Users\deeptisa\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\asp.net\struct_n_Enum\bin\Debug\struct_n_Enum.exe
+C:\Users\deeptisa\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\asp.net\struct_n_Enum\bin\Debug\struct_n_Enum.pdb
+C:\Users\deeptisa\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\asp.net\struct_n_Enum\obj\Debug\struct_n_Enum.csproj.AssemblyReference.cache
+C:\Users\deeptisa\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\asp.net\struct_n_Enum\obj\Debug\struct_n_Enum.csproj.CoreCompileInputs.cache
+C:\Users\deeptisa\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\asp.net\struct_n_Enum\obj\Debug\struct_n_Enum.exe
+C:\Users\deeptisa\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\asp.net\struct_n_Enum\obj\Debug\struct_n_Enum.pdb
+C:\Users\deeptisa\OneDrive - Infinite Computer Solutions (India) Limited\Desktop\asp.net\struct_n_Enum\obj\Debug\struct_n_Enum.exe.config

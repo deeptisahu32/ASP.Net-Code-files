@@ -19,7 +19,7 @@
     <asp:Label runat="server" ID="lblUnitsError" CssClass="msg-error"></asp:Label><br />
 
     <asp:Button runat="server" ID="btnAddOne" Text="Add Current Bill" CssClass="btn btn-primary" OnClick="btnAddOne_Click" />
-    <asp:Button runat="server" ID="btnFinish" Text="Finish Adding" CssClass="btn btn-outline" OnClick="btnFinish_Click" /><br /><br />
+    &nbsp;&nbsp;<asp:Button runat="server" ID="btnFinish" Text="Finish Adding" CssClass="btn btn-outline" OnClick="btnFinish_Click" /><br /><br />
 
     <asp:Label runat="server" ID="lblOutput" CssClass="msg-success"></asp:Label>
     <asp:Literal runat="server" ID="litLog"></asp:Literal>
