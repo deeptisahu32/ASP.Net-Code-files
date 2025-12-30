@@ -38,7 +38,7 @@
 
         Server Time :
         <br />
-        <asp:Label ID="lblmsg" runat="server"></asp:Label>
+        <asp:Label ID="lblmsg" runat="server" Text=""></asp:Label>
         <br />
         <br />
 
