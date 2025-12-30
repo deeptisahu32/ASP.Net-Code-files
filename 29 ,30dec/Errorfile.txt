@@ -1,0 +1,1 @@
+ Exception of type 'System.Web.HttpUnhandledException' was thrown. System.Web Procedure or function 'ExceptionLoggingToDB' expects parameter '@excetype', which was not supplied.
