@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\29 dec\\ExceptionPRJ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AF8829B0-7572-4089-BD84-89C791B5CA3F}|ExceptionPRJ.csproj|C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\29 dec\\ExceptionPRJ\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{AF8829B0-7572-4089-BD84-89C791B5CA3F}|ExceptionPRJ.csproj|c:\\users\\deeptisa\\onedrive - infinite computer solutions (india) limited\\desktop\\asp.net\\29 dec\\exceptionprj\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{AF8829B0-7572-4089-BD84-89C791B5CA3F}|ExceptionPRJ.csproj|solutionrelative:webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{AF8829B0-7572-4089-BD84-89C791B5CA3F}|ExceptionPRJ.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF8829B0-7572-4089-BD84-89C791B5CA3F}|ExceptionPRJ.csproj|c:\\users\\deeptisa\\onedrive - infinite computer solutions (india) limited\\desktop\\asp.net\\29 dec\\exceptionprj\\exceptionloggingdbcl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AF8829B0-7572-4089-BD84-89C791B5CA3F}|ExceptionPRJ.csproj|C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\29 dec\\ExceptionPRJ\\exceptionloggingdbcl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF8829B0-7572-4089-BD84-89C791B5CA3F}|ExceptionPRJ.csproj|solutionrelative:exceptionloggingdbcl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -96,8 +96,7 @@
               "RelativeToolTip": "ExceptionLoggingDbcl.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T05:28:44.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-30T05:28:44.766Z"
             },
             {
               "$type": "Document",
@@ -109,8 +108,7 @@
               "RelativeToolTip": "DbErr.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-12-30T05:17:11.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-30T05:17:11.215Z"
             },
             {
               "$type": "Document",

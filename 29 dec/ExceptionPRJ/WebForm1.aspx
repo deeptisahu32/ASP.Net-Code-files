@@ -12,7 +12,7 @@
         <div>
             <asp:GridView ID="GridView1" runat="server"></asp:GridView>
             <br />
-            <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+            <asp:Label ID="Label1" runat="server" Text="Lable"></asp:Label>
         </div>
     </form>
 </body>
