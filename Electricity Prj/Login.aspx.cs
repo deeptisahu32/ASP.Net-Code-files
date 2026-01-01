@@ -12,20 +12,40 @@ namespace Electricity_Prj
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (Session["user"] != null)
+            {
+                Response.Redirect("~/Home.aspx");
+                return;
+            }
+
+            if (!IsPostBack)
+            {
+                lblMsg.Text = string.Empty;
+            }
+
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
 
-            if (txtUser.Text == "admin" && txtPass.Text == "admin@345")
+
+            var user = txtUser.Text.Trim();
+            var pwd = txtPass.Text.Trim();
+
+            if (user.Equals("admin", StringComparison.OrdinalIgnoreCase) && pwd == "admin@123")
             {
-                Session["Admin"] = "true";
-                Response.Redirect("AddBill.aspx");
+                Session["user"] = user;
+
+                Session["Admin"] = true;  
+
+                Response.Redirect("~/Home.aspx");
             }
+
             else
             {
-                lblMsg.Text = "Invalid credentials , user should be admin and passs should be admin@345";
+                lblMsg.Text = "Invalid credentials.";
             }
+
 
         }
     }

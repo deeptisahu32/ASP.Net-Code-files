@@ -11,97 +11,70 @@ namespace Electricity_Prj
 {
 
 
-    public partial class AddBill
+    public partial class RetrieveBill
     {
 
         /// <summary>
-        /// lblAuth control.
+        /// lblStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAuth;
+        protected global::System.Web.UI.WebControls.Label lblStatus;
 
         /// <summary>
-        /// txtCount control.
+        /// txtLastN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCount;
+        protected global::System.Web.UI.WebControls.TextBox txtLastN;
 
         /// <summary>
-        /// txtConsumerNumber control.
+        /// btnFetch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtConsumerNumber;
+        protected global::System.Web.UI.WebControls.Button btnFetch;
 
         /// <summary>
-        /// txtConsumerName control.
+        /// txtConsumerId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtConsumerName;
+        protected global::System.Web.UI.WebControls.TextBox txtConsumerId;
 
         /// <summary>
-        /// txtUnits control.
+        /// btnRetrieveByCN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUnits;
+        protected global::System.Web.UI.WebControls.Button btnRetrieveByCN;
 
         /// <summary>
-        /// lblUnitsError control.
+        /// lblSearchMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUnitsError;
+        protected global::System.Web.UI.WebControls.Label lblSearchMsg;
 
         /// <summary>
-        /// btnAddOne control.
+        /// gvBills control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddOne;
-
-        /// <summary>
-        /// btnFinish control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFinish;
-
-        /// <summary>
-        /// lblOutput control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblOutput;
-
-        /// <summary>
-        /// litLog control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal litLog;
+        protected global::System.Web.UI.WebControls.GridView gvBills;
     }
 }

@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Electricity_Prj.Site1" %>
+
 <!DOCTYPE html>
 <html>
 <head runat="server">
@@ -10,14 +11,41 @@
             margin: 0;
             padding: 0;
         }
-        header {
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background: #333;
             color: #fff;
-            padding: 12px;
-            text-align: center;
+            padding: 10px 16px;
+        }
+
+        .brand {
             font-size: 20px;
             font-weight: bold;
         }
+
+        .nav-left a, .nav-right a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 12px;
+            font-weight: 600;
+        }
+
+        .nav-right a {
+            margin-left: 12px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
         footer {
             background: #eee;
             text-align: center;
@@ -26,79 +54,160 @@
             color: #555;
             margin-top: 20px;
         }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+
         h2, h3 {
             margin-top: 0;
+            text-align: center;
             color: #222;
         }
+
         .label {
             display: block;
             margin-bottom: 6px;
             font-weight: bold;
         }
+
         .input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            width: 280px;
+            padding: 10px 12px;
+            margin: 8px auto;
+            display: block;
+            text-align: center;
+            border: 1px solid #cfcfcf;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
         }
+
+        .label {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .c {
+            width: 280px;
+            padding: 10px 12px;
+            margin: 8px auto;
+            display: block;
+            text-align: center;
+            border: 1px solid #cfcfcf;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        }
+
+        .b {
+            background: purple;
+            color: #fff;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 15px;
+            display: block;
+            margin: 12px auto;
+            transition: background .2s ease, transform .08s ease;
+        }
+
+            .b:hover {
+                background: #d225d2;
+            }
+
+            .b:active {
+                transform: translateY(1px);
+            }
+
+        .page-center {
+            min-height: calc(100vh - 140px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .btn {
             padding: 8px 16px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             font-weight: bold;
+            margin: 20px auto;
+            text-align: center;
         }
+
+
+        .button-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
         .btn-primary {
             background: purple;
             color: #fff;
         }
-        .btn-primary:hover {
-            background: #d225d2;
-        }
+
+            .btn-primary:hover {
+                background: #d225d2;
+            }
+
         .btn-outline {
             background: purple;
             color: #fff;
-           
         }
-        .btn-outline:hover {
-            background: #d225d2;
+
+            .btn-outline:hover {
+                background: #d225d2;
+            }
+
+        .msg-error {
+            color: red;
         }
-        .msg-error { color: red; }
-        .msg-success { color: green; }
+
+        .msg-success {
+            color: green;
+        }
+
         .grid {
             width: 100%;
             border-collapse: collapse;
             margin-top: 10px;
         }
-        .grid th, .grid td {
-            border: 1px solid #ccc;
-            padding: 8px;
-            text-align: left;
-        }
-        .grid th {
-            background: #f1f1f1;
-        }
+
+            .grid th, .grid td {
+                border: 1px solid #ccc;
+                padding: 8px;
+                text-align: left;
+            }
+
+            .grid th {
+                background: #f1f1f1;
+            }
     </style>
     <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
 </head>
 <body>
     <form runat="server">
-        <header>Electricity Board Billing Automation</header>
+        <div class="topbar">
+            <div class="brand">Electricity Board Billing Automation</div>
+            <div class="nav-left">
+                <asp:HyperLink ID="lnkLogin" runat="server" NavigateUrl="~/Login.aspx" Text="Login" />
+                <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/Home.aspx" Text="Home" />
+                <asp:HyperLink ID="lnkAddBill" runat="server" NavigateUrl="~/AddBill.aspx" Text="Add Bill" />
+                <asp:HyperLink ID="lnkRetrieve" runat="server" NavigateUrl="~/RetrieveBill.aspx" Text="Retrieve Bill" />
+            </div>
+            <div class="nav-right">
+                <asp:LinkButton ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" />
+            </div>
+        </div>
+
         <div class="container">
             <asp:ContentPlaceHolder ID="MainContent" runat="server" />
         </div>
+
         <footer>&copy; 2025 Electricity_Prj</footer>
         <asp:ContentPlaceHolder ID="ScriptContent" runat="server" />
     </form>
 </body>
 </html>
-

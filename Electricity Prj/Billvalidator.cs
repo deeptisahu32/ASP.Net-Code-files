@@ -9,7 +9,7 @@ namespace Electricity_Prj.Services
     {
         public string ValidateUnitsConsumed(int unitsConsumed)
         {
-            return (unitsConsumed < 0) ? "Given units is invalid" : null;
+            return (unitsConsumed < 0) ? "Given units is invalid" : string.Empty;
         }
 
     }

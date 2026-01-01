@@ -29,124 +29,110 @@ namespace Electricity_Prj
 
             if (!IsPostBack)
             {
-                ViewState["TargetCount"] = 0;
                 ViewState["AddedCount"] = 0;
             }
 
         }
 
 
-        private bool TryParseCount(out int count)
+
+        private bool TryParseCount(out int target)
         {
-            count = 0;
-            return int.TryParse(txtCount.Text, out count) && count > 0;
+            target = 0;
+            if (int.TryParse(txtCount.Text, out int t) && t > 0)
+            {
+                target = t;
+                return true;
+            }
+            return false;
         }
+
+
 
         protected void btnAddOne_Click(object sender, EventArgs e)
         {
-
+            // 1) Units parse
             if (!int.TryParse(txtUnits.Text, out int units))
             {
                 lblUnitsError.Text = "Enter a valid integer for units.";
                 return;
             }
 
+            // 2) Units validation (empty string means NO error)
             string unitsErr = validator.ValidateUnitsConsumed(units);
-            if (unitsErr != null)
+            if (!string.IsNullOrEmpty(unitsErr))
             {
-                // Show error and do not proceed until user enters valid units
                 lblUnitsError.Text = unitsErr; // "Given units is invalid"
                 return;
             }
 
-            lblUnitsError.Text = "";
+            lblUnitsError.Text = string.Empty;
 
+            // 3) Prepare model (normalize CN)
             var eb = new ElectricityBill
             {
-                ConsumerNumber = txtConsumerNumber.Text.Trim(),
+                ConsumerNumber = txtConsumerNumber.Text.Trim().ToUpperInvariant(), // normalize
                 ConsumerName = txtConsumerName.Text.Trim(),
                 UnitsConsumed = units
             };
 
-
             try
             {
-                // Calculate & display per sample format
+                // Calculate bill
                 board.CalculateBill(eb);
 
-                // Log: EB#### Name Units Bill Amount : X
-                litLog.Text += $"<div>{eb.ConsumerNumber} {eb.ConsumerName} {eb.UnitsConsumed} Bill Amount : {eb.BillAmount}</div>";
-
-                // Store to DB
+                // Store (AddBill includes duplicate pre-check + SQL unique catch)
                 board.AddBill(eb);
+
+                
+
+                litLog.Text += $"<div>{eb.ConsumerNumber} {eb.ConsumerName} {eb.UnitsConsumed} " +
+                                               $"Bill Amount : {eb.BillAmount:0.##} | Date : {DateTime.Now:dd-MMM-yyyy HH:mm}</div>";
+
                 lblOutput.Text = "Bill added.";
 
-
-                if (TryParseCount(out int target))
+                // 7) Counter logic (safe ViewState reads)
+                int target = 0;
+                if (TryParseCount(out target))
                 {
-
                     ViewState["TargetCount"] = target;
-                    int added = (int)ViewState["AddedCount"] + 1;
+                    int added = (ViewState["AddedCount"] is int v) ? v : 0;
+                    added++;
                     ViewState["AddedCount"] = added;
 
                     if (added >= target)
-                    {
                         lblOutput.Text = $"Added {added} bills (target {target}). You can now retrieve last N bills.";
-                    }
                     else
-                    {
-
                         lblOutput.Text = $"Added {added}/{target}. Continue adding...";
-
-                    }
-
                 }
-
-
             }
-            catch(FormatException ex)
+            catch (FormatException ex)
             {
-
+                // Invalid Consumer Number (from model property or CalculateBill)
                 lblUnitsError.Text = ex.Message; // "Invalid Consumer Number"
-
             }
-            catch(Exception ex)
+            catch (InvalidOperationException ex)
             {
-
-                lblUnitsError.Text = "Unexpected error: " + ex.Message;
-
+                lblUnitsError.Text = ex.Message;
             }
-
+            catch (Exception ex)
+            {
+                lblUnitsError.Text = "Unexpected error: " + ex.Message;
+            }
         }
 
         protected void btnFinish_Click(object sender, EventArgs e)
         {
 
-            if (TryParseCount(out int target))
-            {
-                int added = (int)ViewState["AddedCount"];
-                lblOutput.Text = $"Added {added}/{target}.";
-            }
-            else
-            {
-                lblOutput.Text = "Please set a valid target count.";
-            }
+
+            txtConsumerNumber.Text = "";
+            txtConsumerName.Text = "";
+            txtUnits.Text = "";
+            lblOutput.Text = "Finished adding. Use header links to navigate.";
+
 
         }
 
-        protected void btnRetrieve_Click(object sender, EventArgs e)
-        {
-
-            if (!int.TryParse(txtLastN.Text, out int n) || n <= 0)
-            {
-                lblOutput.Text = "Enter a valid positive integer for last N.";
-                return;
-            }
-
-            List<ElectricityBill> lastN = board.Generate_N_BillDetails(n);
-            gvLastN.DataSource = lastN;
-            gvLastN.DataBind();
-
-        }
+       
     }
 }

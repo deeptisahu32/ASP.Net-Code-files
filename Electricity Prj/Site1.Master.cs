@@ -12,6 +12,22 @@ namespace Electricity_Prj
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            bool isAuth = (Session["user"] != null);
+
+            // Logout visible per requirement (even on Login)
+            btnLogout.Visible = true;
+
+            // Hide Login when authenticated
+            lnkLogin.Visible = !isAuth;
+
         }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Session.Abandon();
+            Response.Redirect("~/Login.aspx");
+        }
+
     }
 }
