@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\Validation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EFFD6D45-FC54-4449-A4A6-4041C7177A8E}|Validation.csproj|C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\Validation\\validationprj.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{EFFD6D45-FC54-4449-A4A6-4041C7177A8E}|Validation.csproj|c:\\users\\deeptisa\\onedrive - infinite computer solutions (india) limited\\desktop\\asp.net\\validation\\validationprj.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{EFFD6D45-FC54-4449-A4A6-4041C7177A8E}|Validation.csproj|solutionrelative:validationprj.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EFFD6D45-FC54-4449-A4A6-4041C7177A8E}|Validation.csproj|c:\\users\\deeptisa\\onedrive - infinite computer solutions (india) limited\\desktop\\asp.net\\validation\\validationprj.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EFFD6D45-FC54-4449-A4A6-4041C7177A8E}|Validation.csproj|C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\Validation\\validationprj.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EFFD6D45-FC54-4449-A4A6-4041C7177A8E}|Validation.csproj|solutionrelative:validationprj.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,8 +30,7 @@
               "RelativeToolTip": "validationprj.aspx.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAASwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-26T03:45:20.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-26T03:45:20.994Z"
             },
             {
               "$type": "Document",
@@ -41,7 +40,7 @@
               "RelativeDocumentMoniker": "validationprj.aspx",
               "ToolTip": "C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\Validation\\validationprj.aspx",
               "RelativeToolTip": "validationprj.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-12-26T03:42:42.995Z",
               "EditorCaption": ""
