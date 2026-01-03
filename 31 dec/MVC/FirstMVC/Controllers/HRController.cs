@@ -31,7 +31,7 @@ namespace FirstMVC.Controllers
             return View(d);
         }
 
-        //1. inding a model object to a view
+        //1. binding a model object to a view
 
         public ActionResult DisplayEmployee()
         {
@@ -51,5 +51,23 @@ namespace FirstMVC.Controllers
             return View(emplist);
         }
 
+        //4. To change the name of the view different from action method name
+        //4.1 we can give action name selector and map it to diffrent view name
+
+        [ActionName("Test")]
+        public ActionResult DifferentViewName()
+        {
+            ViewBag.sample = "Testing View with different names";
+            return View("DifferentViewName");  //4.1
+        }
+        //4.2 we can change the view name to suit the action name
+        [ActionName("Test1")]
+        public ActionResult DifferentViewName1()
+        {
+            ViewBag.sample = "Testing View with different names";
+            ViewData["mydata"] = "this is my viewdata";
+            //return View("DiffrentViewName");  //4.1
+            return View();
+        }
     }
 }

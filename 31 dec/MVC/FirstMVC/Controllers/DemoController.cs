@@ -37,11 +37,13 @@ namespace FirstMVC.Controllers
         }
 
         //4. emptyresult
+        [NonAction]  // it is action selector that will avoid empty method ,
+                     // router will will not create that method 
         public EmptyResult EmptyMethod()
         {
             int amount = 45000;
             float si = (amount * 3 * 2) / 100;
-            return new EmptyResult();         
+            return new EmptyResult();    // it will not print any thing      
         }
 
         // 5. redirectresult
@@ -59,6 +61,21 @@ namespace FirstMVC.Controllers
         {
             Employee employee=new Employee() { Id=1,Name="Deepa",Age=23};  //object intializer without calling cunstucture
             return Json(employee,JsonRequestBehavior.AllowGet); 
+        }
+
+        // to check if the tempdata values are availbale here from the previous controllers multiple request
+
+        public ActionResult Test_TempData_across_controllers()
+        {
+            TempData.Keep();  
+            return View(TempData["stores"]);
+        }
+
+        //this action method is to best the tempdata values being made
+        //available even after travesing many requests, and witout redirection
+        public ActionResult CheckTempData()
+        {
+            return View(TempData["stores"]);
         }
     }
 }

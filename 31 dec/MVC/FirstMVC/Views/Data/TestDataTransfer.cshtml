@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "TestDataTransfer";
+}
+
+<h2>TestDataTransfer</h2>
+<h3>@ViewBag.data1</h3>
+<h3>@ViewData["data2"]</h3>
+
+
+<hr />
+
+<h2>Office Rules through view bag</h2>
+
+@foreach (string item in ViewBag.offrules)
+{
+    <ol>
+        <li>@item</li>
+    </ol>
+}
+<br />
+<hr />
+<h2>office rules through view data</h2>
+@foreach (var x in ViewData["OR"] as List<string>) //typecasting
+{
+    
+        <ol>
+            <li>@x</li>
+        </ol>
+    
+}
+
+

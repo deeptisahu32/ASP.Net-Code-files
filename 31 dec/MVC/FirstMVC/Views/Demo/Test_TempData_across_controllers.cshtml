@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Test_TempData_across_controllers";
+}
+
+<h2>Test_TempData_across_controllers</h2>
+
+@foreach(var td in TempData["stores"] as List<string>)
+            {
+                <p>@td</p>
+            }
+
