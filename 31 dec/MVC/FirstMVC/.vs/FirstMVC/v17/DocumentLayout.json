@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\31 dec\\MVC\\FirstMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1B61511-8F20-455C-8FDB-FA667C1050FE}|FirstMVC.csproj|C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\31 dec\\MVC\\FirstMVC\\controllers\\democontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E1B61511-8F20-455C-8FDB-FA667C1050FE}|FirstMVC.csproj|c:\\users\\deeptisa\\onedrive - infinite computer solutions (india) limited\\desktop\\asp.net\\31 dec\\mvc\\firstmvc\\controllers\\democontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1B61511-8F20-455C-8FDB-FA667C1050FE}|FirstMVC.csproj|solutionrelative:controllers\\democontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1B61511-8F20-455C-8FDB-FA667C1050FE}|FirstMVC.csproj|c:\\users\\deeptisa\\onedrive - infinite computer solutions (india) limited\\desktop\\asp.net\\31 dec\\mvc\\firstmvc\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{E1B61511-8F20-455C-8FDB-FA667C1050FE}|FirstMVC.csproj|C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\31 dec\\MVC\\FirstMVC\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{E1B61511-8F20-455C-8FDB-FA667C1050FE}|FirstMVC.csproj|solutionrelative:views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1B61511-8F20-455C-8FDB-FA667C1050FE}|FirstMVC.csproj|c:\\users\\deeptisa\\onedrive - infinite computer solutions (india) limited\\desktop\\asp.net\\31 dec\\mvc\\firstmvc\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E1B61511-8F20-455C-8FDB-FA667C1050FE}|FirstMVC.csproj|C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\31 dec\\MVC\\FirstMVC\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1B61511-8F20-455C-8FDB-FA667C1050FE}|FirstMVC.csproj|solutionrelative:controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1B61511-8F20-455C-8FDB-FA667C1050FE}|FirstMVC.csproj|c:\\users\\deeptisa\\onedrive - infinite computer solutions (india) limited\\desktop\\asp.net\\31 dec\\mvc\\firstmvc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{E1B61511-8F20-455C-8FDB-FA667C1050FE}|FirstMVC.csproj|C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\31 dec\\MVC\\FirstMVC\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{E1B61511-8F20-455C-8FDB-FA667C1050FE}|FirstMVC.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -119,8 +119,7 @@
               "RelativeToolTip": "Views\\Web.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2026-01-02T10:46:50.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T10:46:50.61Z"
             },
             {
               "$type": "Document",
@@ -132,8 +131,7 @@
               "RelativeToolTip": "Controllers\\DataController.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAowB0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T06:32:00.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T06:32:00.884Z"
             },
             {
               "$type": "Document",
@@ -158,8 +156,7 @@
               "RelativeToolTip": "Views\\Demo\\CheckTempData.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-02T07:49:13.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T07:49:13.831Z"
             },
             {
               "$type": "Document",
@@ -171,8 +168,7 @@
               "RelativeToolTip": "Views\\Data\\FirstTempRequest.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-02T07:18:37.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-02T07:18:37.016Z"
             },
             {
               "$type": "Document",
