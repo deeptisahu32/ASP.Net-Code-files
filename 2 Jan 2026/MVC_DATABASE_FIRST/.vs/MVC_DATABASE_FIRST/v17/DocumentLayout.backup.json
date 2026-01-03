@@ -46,21 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\MVC_DATABASE_FIRST\\Views\\Default\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Default\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\MVC_DATABASE_FIRST\\Views\\Default\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Default\\Edit.cshtml",
-              "ViewState": "AgIAAB0AAAAAAAAAAAASwDIAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-02T12:43:46.091Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -106,11 +93,24 @@
               "Title": "DefaultController.cs",
               "DocumentMoniker": "C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\MVC_DATABASE_FIRST\\Controllers\\DefaultController.cs",
               "RelativeDocumentMoniker": "Controllers\\DefaultController.cs",
-              "ToolTip": "C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\MVC_DATABASE_FIRST\\Controllers\\DefaultController.cs*",
-              "RelativeToolTip": "Controllers\\DefaultController.cs*",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAuwEsAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\MVC_DATABASE_FIRST\\Controllers\\DefaultController.cs",
+              "RelativeToolTip": "Controllers\\DefaultController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAA0wEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-02T10:42:16.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\MVC_DATABASE_FIRST\\Views\\Default\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Default\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\deeptisa\\OneDrive - Infinite Computer Solutions (India) Limited\\Desktop\\asp.net\\MVC_DATABASE_FIRST\\Views\\Default\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Default\\Edit.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAASwDIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-02T12:43:46.091Z",
               "EditorCaption": ""
             },
             {
